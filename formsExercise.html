@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Survey page">
+    <title>Survey</title>
+</head>
+<body>
+   <fieldset>
+    <legend>Customer Experience Survey</legend>
+        <form>
+            <label for="storeNumber">Store Number</label>
+             <select name="storeNumber" id="storeNumber">
+                <option value="selectStore" selected disabled hidden>Select a store</option>
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option>
+            </select>
+        <fieldset>
+            <legend>When You Visited</legend>
+                    <label for="dateVisited">Date Visited</label>
+                    <input type="date" id="dateVisited" min="2020-08-23" max="2021-08-23" required>
+                    <br>
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+        </fieldset>
+            <label for="fullName">Full Name</label>
+            <input type="text" placeholder="Name" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" required>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="radioLink">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="radioLink" checked>
+            <label for="female">Female</label>
+        </fieldset>
+        Tell us about your experience:
+        <br>
+        <textarea id="experience" cols="26" rows="3"></textarea>
+        <br>
+        Times visited in the last month:
+            <input type="number" id="timesVisited" min="1" max="30">
+            <br>
+            <input type="checkbox" required>
+            Please check this box if you would be willing to be contacted about your experience
+            <br>
+            <label for="password">Password</label>
+            <input type="text" id=password required minlength="5" maxlength="10">
+            <br>
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+</html>
